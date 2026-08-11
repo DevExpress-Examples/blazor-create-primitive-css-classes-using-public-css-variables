@@ -1,4 +1,4 @@
-﻿using BlazorBlankServer.Components;
+﻿using DxBlazorDesignSystemPrimitives.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

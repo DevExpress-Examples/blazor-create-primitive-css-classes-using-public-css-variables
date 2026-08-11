@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DxBlazorDesignSystemPrimitives", "CS\DxBlazorDesignSystemPrimitives.csproj", "{6BF07033-5F34-371B-E78E-864A72258200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF07033-5F34-371B-E78E-864A72258200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF07033-5F34-371B-E78E-864A72258200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF07033-5F34-371B-E78E-864A72258200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF07033-5F34-371B-E78E-864A72258200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B850AA7D-66EE-41FF-A3D3-BE0B61330FAF}
+	EndGlobalSection
+EndGlobal
