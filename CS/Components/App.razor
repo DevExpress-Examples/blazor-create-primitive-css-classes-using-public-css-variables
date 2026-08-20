@@ -22,5 +22,5 @@
 
 @code {
     private string AppendVersion(string path) => FileVersionProvider.AddFileVersionToPath("/", path);
-    private static readonly ITheme FluentLight = Themes.Fluent.Clone(p => p.AddFilePaths($"css/theme-fluent.css"));
+    private static readonly ITheme FluentLight = Themes.Fluent.Clone(p => p.AddFilePaths(new[] { $"css/theme-fluent.css", "css/primitives.css" }));
 }

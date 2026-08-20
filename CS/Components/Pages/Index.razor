@@ -1,6 +1,91 @@
 ﻿@page "/"
-<PageTitle>Welcome</PageTitle>
+@rendermode InteractiveServer
+
+
+<PageTitle>Primitive Classes</PageTitle>
+
+<style>
+
+</style>
 
 <div class="main-content">
-    Welcome to your new DevExpress Blazor Application
+
+    <div class="card card-profile">
+
+        <div class="row" style="align-items: flex-start;">
+
+            <span class="avatar avatar-large">
+                <img src="images/avatars/Amelia_Harper.png" alt="Amelia Harper">
+            </span>
+
+            <div class="stack flex-grow">
+
+                <div class="row flex-between">
+                    <h3 class="label-name">Amelia Harper</h3>
+                    <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                              IconUrl="@Icon.EditPen" />
+                </div>
+
+                <span class="label-role">Engineer</span>
+
+                <div class="row">
+                    <DxDropDownButton Text="Call"
+                                      IconUrl="@Icon.Phone"
+                                      RenderStyle="ButtonRenderStyle.Primary">
+                        <Items>
+                            <DxDropDownButtonItem Text="Mobile" />
+                            <DxDropDownButtonItem Text="Work" />
+                        </Items>
+                    </DxDropDownButton>
+
+                    <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                              IconUrl="@Icon.Mail" />
+
+                    <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                              IconUrl="@Icon.Chat" />
+                </div>
+            </div>
+        </div>
+
+        <DxTabs>
+            <DxTabPage Text="Tasks">
+
+                <div class="stack">
+                    <div class="card card-item">
+                        <div class="row flex-between">
+                            <span class="badge badge-success">Low</span>
+                            <span class="badge badge-danger">12/12/26</span>
+                        </div>
+                        <b>Bold text</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <DxProgressBar Value="30" LabelPosition="ProgressBarLabelPosition.Right" CssClass="card-progress" Size="100%" />
+                    </div>
+
+                    <div class="card card-item">
+                        <div class="row flex-between">
+                            <span class="badge badge-warning">Medium</span>
+                            <span class="badge badge-danger">12/12/26</span>
+                        </div>
+                        <b>Bold text</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <DxProgressBar Value="60" LabelPosition="ProgressBarLabelPosition.Right" CssClass="card-progress" Size="100%" />
+                    </div>
+
+                    <div class="card card-item">
+                        <div class="row flex-between">
+                            <span class="badge badge-danger">High</span>
+                            <span class="badge badge-danger">12/12/26</span>
+                        </div>
+                        <b>Bold text</b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <DxProgressBar Value="95" LabelPosition="ProgressBarLabelPosition.Right" CssClass="card-progress" Size="100%" />
+                    </div>
+                </div>
+            </DxTabPage>
+            <DxTabPage Text="Evaluations"></DxTabPage>
+        </DxTabs>
+
+    </div>
+
 </div>
+

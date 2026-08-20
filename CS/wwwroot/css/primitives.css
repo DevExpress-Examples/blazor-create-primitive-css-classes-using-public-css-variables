@@ -1,0 +1,140 @@
+:root {
+    --stack-gap: var(--dxds-spacing-80, 0.5rem);
+}
+
+/*===LAYOUT===*/
+.row {
+    display: flex;
+    align-items: center;
+    gap: var(--stack-gap);
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--stack-gap);
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-grow {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+/*======*/
+
+/*===AVATAR===*/
+.avatar {
+    --avatar-size: var(--dxds-spacing-400, 2.5rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    overflow: hidden;
+    border-radius: var(--dxds-border-radius-full, 50%);
+    background-color: var(--dxds-color-surface-neutral-subdued-rest, #e9ecef);
+    color: var(--dxds-color-content-neutral-default-rest, #212529);
+    font-size: var(--dxds-font-size-base-md, 0.875rem);
+    font-weight: var(--dxds-font-weight-base-strong, 600);
+}
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.avatar-large {
+    --avatar-size: var(--dxds-spacing-800, 5rem);
+}
+
+.avatar-accent {
+    background-color: var(--dxds-color-surface-primary-default-rest, #0F6CBD);
+    color: var(--dxds-color-content-neutral-default-on-surface-rest, #FFFFFF);
+}
+/*======*/
+
+
+/*===BADGE===*/
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--dxds-spacing-40, 0.25rem);
+    border: var(--dxds-border-width-10, 0.0625rem) solid var(--dxds-color-border-neutral-default-rest, #d3d3d2);
+    border-radius: var(--dxds-border-radius-full, 62rem);
+    background-color: var(--dxds-color-surface-neutral-subdued-rest, #e9ecef);
+    color: var(--dxds-color-content-neutral-default-rest, #212529);
+    font-size: var(--dxds-font-size-caption-sm, 0.625rem);
+    font-weight: var(--dxds-font-weight-caption-md, 400);
+    line-height: var(--dxds-line-height-caption-md, 1rem);
+    white-space: nowrap;
+}
+
+.badge-accent {
+    background-color: var(--dxds-color-surface-primary-deep-rest, #e7eff9);
+    border-color: var(--dxds-color-border-primary-default-rest, #b4d6f4);
+    color: var(--dxds-color-content-primary-default-rest, #0f6cbd);
+}
+
+.badge-success {
+    background-color: var(--dxds-color-surface-success-deep-rest, #e0f2e0);
+    border-color: var(--dxds-color-border-success-default-rest, #a9d8a9);
+    color: var(--dxds-color-content-success-default-rest, #0e7c0e);
+}
+
+.badge-danger {
+    background-color: var(--dxds-color-surface-danger-deep-rest, #fbe3e2);
+    border-color: var(--dxds-color-border-danger-default-rest, #f1a9a6);
+    color: var(--dxds-color-content-danger-default-rest, #c4314b);
+}
+
+.badge-warning {
+    background-color: var(--dxds-color-surface-warning-deep-rest, #fdf1d8);
+    border-color: var(--dxds-color-border-warning-default-rest, #f0cf7a);
+    color: var(--dxds-color-content-warning-default-rest, #7a5900);
+}
+/*======*/
+
+/*===CARD===*/
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--stack-gap);
+    min-width: 0;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    background-color: var(--dxds-color-surface-neutral-default-rest, #fffffe);
+    color: var(--dxds-color-content-neutral-default-rest, #161616);
+    background-clip: border-box;
+    border-radius: var(--dxds-border-radius-40, 0.25rem);
+}
+
+.card-item {
+    border: var(--dxds-border-width-10, 0.0625rem) solid var(--dxds-color-border-neutral-default-rest, #d3d3d2);
+    padding: var(--dxds-spacing-120, 1rem);
+}
+
+.card-profile {
+    width: 25%;
+    padding: var(--dxds-spacing-240, 1.5rem);
+}
+/*======*/
+
+/*===TEXT LABELS===*/
+.label-name {
+    margin: 0;
+    font-size: var(--dxds-font-size-title-md, 1.25rem);
+    font-weight: var(--dxds-font-weight-title-strong, 600);
+    color: var(--dxds-color-content-neutral-default-rest, #212529);
+}
+
+.label-role {
+    color: var(--dxds-color-content-neutral-subdued-rest, #6c757d);
+    font-size: var(--dxds-font-size-base-md, 0.875rem);
+}
+/*======*/
