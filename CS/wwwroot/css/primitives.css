@@ -66,16 +66,7 @@
     }
 
 .avatar-large {
-    --avatar-size: var(--dxds-spacing-800, 5rem);
-}
-
-.avatar-xlarge {
     --avatar-size: var(--dxds-spacing-960, 6rem);
-}
-
-.avatar-accent {
-    background-color: var(--dxds-color-surface-primary-default-rest, #0F6CBD);
-    color: var(--dxds-color-content-neutral-default-on-surface-rest, #FFFFFF);
 }
 /*======*/
 
