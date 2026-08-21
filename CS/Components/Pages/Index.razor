@@ -4,33 +4,30 @@
 
 <PageTitle>Primitive Classes</PageTitle>
 
-<style>
-
-</style>
-
 <div class="main-content">
 
     <div class="card card-profile">
 
         <div class="card-header">
 
-        <div class="row" style="align-items: flex-start;">
+        <div class="row gap-160 align-start">
 
             <span class="avatar avatar-xlarge">
                 <img src="images/avatars/Amelia_Harper.png" alt="Amelia Harper">
             </span>
 
-            <div class="stack flex-grow">
+            <div class="stack flex-grow gap-160">
 
-                <div class="row flex-between">
-                    <h3 class="label-name">Amelia Harper</h3>
-                    <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
-                              IconUrl="@Icon.EditPen" />
+                <div class="stack gap-40">
+                    <div class="row flex-between name-row">
+                        <h3 class="label-name">Amelia Harper</h3>
+                        <DxButton RenderStyleMode="ButtonRenderStyleMode.Text" IconUrl="@Icon.EditPen" />
+                    </div>
+
+                    <span class="label-role">Engineer</span>
                 </div>
 
-                <span class="label-role">Engineer</span>
-
-                <div class="row">
+                <div class="row buttons-row">
                     <DxDropDownButton Text="Call"
                                       IconUrl="@Icon.Phone"
                                       RenderStyle="ButtonRenderStyle.Primary">
