@@ -21,7 +21,7 @@ The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page c
 
 To render a Bootstrap-based layout in Fluent themes, enable the [UseBootstrapStyles](https://docs.devexpress.com/Blazor/DevExpress.Blazor.ThemeFluentProperties.UseBootstrapStyles) option in theme settings (see the [App.razor](/CS/Components/App.razor) file).
 
-Bootstrap approach allows you to build the UI using predefined classes without additional CSS. However, the Bootstrap scale is limited and less flexible.
+Bootstrap approach allows you to build the UI using predefined classes without additional CSS. However, its fixed scale of spacing, size, and color styles is fixed: you cannot use arbitrary or intermediate values. Dynamic styling scenarios may require additional classes or custom CSS/inline styles. This approach has a lower barrier to entry and requires less code upfront, but offers less flexibility for advanced customization.
 
 ## Files to Review
 
