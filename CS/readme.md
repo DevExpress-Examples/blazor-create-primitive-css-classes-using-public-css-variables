@@ -5,7 +5,7 @@ This example demonstrates two different ways to build a simple layout using prim
 - The home page ([Index.razor](/CS/Components/Pages/Index.razor)) uses custom classes with the `dx` prefix (for example, `dx-card`, `dx-row`, or `dx-badge`). These classes rely on DevExpress Blazor [public CSS variables](https://docs.devexpress.com/Blazor/405705/styling-and-themes/fluent-theme-customization/fluent-css-variables) to specify spacing, color, border, opacity, shadow, and typography styles.
 - The Bootstrap page ([BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor)) references Bootstrap utility classes.
 
-Both pages use the same DevExpress Blazor components that helps you focus on the CSS approach rather than component behavior.
+Both pages use the same DevExpress Blazor components, which helps you focus on the CSS approach rather than component behavior.
 
 ## Custom CSS Classes
 
