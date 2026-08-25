@@ -17,7 +17,7 @@ DevExpress Design system-based approach allows you to define any style you need,
 
 ## Bootstrap Classes
 
-The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page creates similar layout using Bootstrap classes (for example, `card-header` or `flex-column`). The [BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css) stylesheet contains a CSS class to limit the card size.
+The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page creates similar layout using Bootstrap classes (for example, `card-header` or `flex-column`). The [BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css) stylesheet contains the CSS rule that limits the card size.
 
 To render a Bootstrap-based layout in Fluent themes, enable the [UseBootstrapStyles](https://docs.devexpress.com/Blazor/DevExpress.Blazor.ThemeFluentProperties.UseBootstrapStyles) option in theme settings (see the [App.razor](/CS/Components/App.razor) file).
 
