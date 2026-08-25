@@ -1,32 +1,39 @@
-# DevExpress Blazor Design System Primitives
+# Blazor — Create Primitive CSS Classes Using Public CSS Variables
 
-## Purpose
+This example implements reusable CSS primitive classes to create an employee card. The application includes two pages that render the same layout:
 
-This example shows how to compose a layout from primitive building blocks using an employee profile card with a task list as a sample scenario. The same composition is implemented in two different ways so you can compare CSS approaches.
+- The home page ([Index.razor](/CS/Components/Pages/Index.razor)) uses custom classes with the `dx` prefix (for example, `dx-card`, `dx-row`, or `dx-badge`). These classes rely on DevExpress Blazor [public CSS variables](https://docs.devexpress.com/Blazor/405705/styling-and-themes/fluent-theme-customization/fluent-css-variables) to specify spacing, color, border, opacity, shadow, and typography styles.
+- The Bootstrap page ([BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor)) references Bootstrap utility classes.
 
-## Two Pages
+Both pages use the same DevExpress Blazor components that helps you focus on the CSS approach rather than component behavior.
 
-1. **Custom CSS classes** built on top of the DevExpress design system variables.
-2. **Plain Bootstrap** classes only, without any custom styles (except for fixing the card's exact dimensions).
+## Custom CSS Classes
 
-## Files
+The [primitives.css](/CS/wwwroot/css/primitives.css) stylesheet in the `wwwroot` folder defines custom CSS primitive classes using [Design System CSS variables](https://docs.devexpress.com/DesignSystem/405636/foundation) (for example, `--dxds-spacing-40`). The example assigns these classes to layout elements in the [Index.razor](/CS/Components/Pages/Index.razor) file to replicate a simple employee card.
 
-- **`CS\Components\Pages\Index.razor`** — the `/` page. The layout is composed from custom primitives (`dx-card`, `dx-row`, `dx-stack`, `dx-badge`, etc.).
-- **`CS\wwwroot\css\primitives.css`** — a set of reusable CSS primitives (layout, avatar, badge, card, text styles) built on top of DevExpress design system tokens (`--dxds-*`: colors, spacing, radii, shadows).
-- **`CS\Components\Pages\BootstrapClasses.razor`** — the `/bootstrap-classes` page. Same layout, but composed entirely from Bootstrap classes (`d-flex`, `card`, `badge`, `gap-*`, `p-3`, etc.).
-- **`CS\Components\Pages\BootstrapClasses.razor.css`** — a minimal scoped CSS file used only to fix the card's width/height, since Bootstrap has no utility classes for arbitrary rem values.
-- Both pages use the same DevExpress components (`DxButton`, `DxSplitButton`, `DxDropDownButton`, `DxTabs`, `DxProgressBar`), so the only difference between the pages is the CSS approach, not the component layer.
+To add the stylesheet to a theme, call the [AddFilePaths](https://docs.devexpress.com/Blazor/DevExpress.Blazor.ThemeProperties.AddFilePaths(System.String--)) method during theme registration (see the [App.razor](/CS/Components/App.razor) file).
 
-## Pros and Cons
+DevExpress Design system-based approach allows you to define any style you need, change variable values at runtime, and keep the UI consistent across the entire application. However, it requires custom CSS.
 
-**Custom CSS primitives based on design tokens**
-- Values (spacing, colors, radii, shadows) come from design system variables, so they can be changed centrally, including implementing **dynamic/interactive customization** (for example, a slider that updates a spacing CSS variable is instantly reflected in every class that uses it).
-- The value scale isn't limited to a fixed set — any arbitrary value can be defined.
-- Requires writing and maintaining your own CSS code.
-- Easier to keep values consistent across the UI, since they are tied to shared variables rather than scattered atomic classes.
+## Bootstrap Classes
 
-**Bootstrap**
-- A ready-made set of classes speeds up building a typical UI without writing CSS.
-- Spacing, sizing, and color values are **static** — defined by the framework's fixed scale. This makes dynamic styling scenarios harder to support (for example, a user-facing density toggle or arbitrary spacing adjustment), since every new value requires either an additional class or falling back to custom CSS/inline styles anyway.
-- The limited value scale may not cover every required level of precision (the step between classes is fixed, with no in-between values).
-- Lower barrier to entry and less code upfront, but less flexible when customization needs go beyond the predefined options.
+The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page implements the same layout using Bootstrap classes (for example, `card-header` or `flex-column`). The [BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css) stylesheet contains a CSS class to limit the card size.
+
+To render a Bootstrap-based layout in Fluent themes, enable the [UseBootstrapStyles](https://docs.devexpress.com/Blazor/DevExpress.Blazor.ThemeFluentProperties.UseBootstrapStyles) option in theme settings (see the [App.razor](/CS/Components/App.razor) file).
+
+Bootstrap approach allows you to build the UI using predefined classes without additional CSS. However, the Bootstrap scale is limited and less flexible.
+
+## Files to Review
+
+- [Components/Pages/Index.razor](Components/Pages/Index.razor)
+- [Components/Pages/BootstrapClasses.razor](Components/Pages/BootstrapClasses.razor)
+- [Components/Pages/BootstrapClasses.razor.css](Components/Pages/BootstrapClasses.razor.css)
+- [Components/App.razor](Components/App.razor)
+- [wwwroot/css/primitives.css](wwwroot/css/primitives.css)
+- [wwwroot/css/theme-fluent.css](wwwroot/css/theme-fluent.css)
+
+## Documentation
+
+- [DevExpress Blazor Themes](https://docs.devexpress.com/Blazor/401523/common-concepts/themes)
+- [CSS Variables in Fluent Themes](https://docs.devexpress.com/Blazor/405705/styling-and-themes/fluent-theme-customization/fluent-css-variables)
+- [DxResourceManager](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxResourceManager)
