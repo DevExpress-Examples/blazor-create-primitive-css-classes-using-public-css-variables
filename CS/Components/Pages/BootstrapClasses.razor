@@ -1,0 +1,73 @@
+﻿@page "/bootstrap-classes"
+<div class="main-content">
+<div class="d-flex flex-column flex-shrink-0">
+    <div class="text-center fw-semibold mb-2">Bootstrap classes only</div>
+    <div class="card border shadow-sm d-flex flex-column mw-100 card-size-limit">
+        <div class="card-header d-flex flex-column gap-3 bg-white">
+            <div class="d-flex align-items-start gap-3">
+                <img class="rounded-circle flex-shrink-0"
+                     src="images/avatars/Amelia_Harper.png"
+                     alt="Amelia Harper"
+                     width="96" height="96" />
+                <div class="flex-grow-1 d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="fs-2 mb-0">Amelia Harper</h3>
+                            <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                                      IconUrl="@Icon.EditPen" />
+                        </div>
+                        <div class="text-body-secondary">Engineer</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <DxSplitButton Text="Call"
+                                       IconUrl="@Icon.Phone"
+                                       RenderStyle="ButtonRenderStyle.Primary">
+                            <Items>
+                                <DxDropDownButtonItem Text="Mobile" />
+                                <DxDropDownButtonItem Text="Work" />
+                            </Items>
+                        </DxSplitButton>
+                        <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                                  IconUrl="@Icon.Mail" />
+                        <DxButton RenderStyleMode="ButtonRenderStyleMode.Text"
+                                  IconUrl="@Icon.Chat" />
+                    </div>
+                </div>
+            </div>
+            <DxTabs>
+                <DxTabPage Text="Tasks"></DxTabPage>
+                <DxTabPage Text="Evaluations"></DxTabPage>
+            </DxTabs>
+        </div>
+        <div class="card-body d-flex flex-column gap-2 overflow-auto">
+            <div class="card p-3 gap-2">
+                <div class="d-flex justify-content-between">
+                    <span class="badge fw-normal border bg-success-subtle border-success text-success">Low</span>
+                    <span class="badge fw-normal border bg-light-subtle text-body-secondary">12/12/26</span>
+                </div>
+                <b>Create 2020 R&amp;D Plans</b>
+                <p class="mb-0 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <DxProgressBar Value="30" LabelPosition="ProgressBarLabelPosition.Right" Size="100%" />
+            </div>
+            <div class="card p-3 gap-2">
+                <div class="d-flex justify-content-between">
+                    <span class="badge fw-normal border bg-warning-subtle border-warning text-warning">Medium</span>
+                    <span class="badge fw-normal border bg-light-subtle text-body-secondary">12/12/26</span>
+                </div>
+                <b>Create 2020 R&amp;D Plans</b>
+                <p class="mb-0 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <DxProgressBar Value="60" LabelPosition="ProgressBarLabelPosition.Right" Size="100%" />
+            </div>
+            <div class="card p-3 gap-2">
+                <div class="d-flex justify-content-between">
+                    <span class="badge fw-normal border bg-danger-subtle border-danger text-danger">High</span>
+                    <span class="badge fw-normal border bg-light-subtle text-body-secondary">12/12/26</span>
+                </div>
+                <b>Create 2020 R&amp;D Plans</b>
+                <p class="mb-0 text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <DxProgressBar Value="95" LabelPosition="ProgressBarLabelPosition.Right" Size="100%" />
+            </div>
+        </div>
+    </div>
+</div>
+</div>
