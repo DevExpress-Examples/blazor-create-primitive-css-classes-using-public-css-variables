@@ -1,6 +1,6 @@
 # Blazor — Create Primitive CSS Classes Using Public CSS Variables
 
-This example implements reusable CSS primitive classes to create an employee card. The application includes two pages that render the same layout:
+This example demonstrates two different ways to build a simple layout using primitive blocks. The application includes two pages that render an employee card:
 
 - The home page ([Index.razor](/CS/Components/Pages/Index.razor)) uses custom classes with the `dx` prefix (for example, `dx-card`, `dx-row`, or `dx-badge`). These classes rely on DevExpress Blazor [public CSS variables](https://docs.devexpress.com/Blazor/405705/styling-and-themes/fluent-theme-customization/fluent-css-variables) to specify spacing, color, border, opacity, shadow, and typography styles.
 - The Bootstrap page ([BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor)) references Bootstrap utility classes.
@@ -17,7 +17,7 @@ DevExpress Design system-based approach allows you to define any style you need,
 
 ## Bootstrap Classes
 
-The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page implements the same layout using Bootstrap classes (for example, `card-header` or `flex-column`). The [BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css) stylesheet contains a CSS class to limit the card size.
+The [BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor) page creates similar layout using Bootstrap classes (for example, `card-header` or `flex-column`). The [BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css) stylesheet contains a CSS class to limit the card size.
 
 To render a Bootstrap-based layout in Fluent themes, enable the [UseBootstrapStyles](https://docs.devexpress.com/Blazor/DevExpress.Blazor.ThemeFluentProperties.UseBootstrapStyles) option in theme settings (see the [App.razor](/CS/Components/App.razor) file).
 
