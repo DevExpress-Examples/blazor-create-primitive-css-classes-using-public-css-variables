@@ -30,12 +30,12 @@ The Bootstrap approach allows you to build the UI using predefined classes witho
 
 ## Files to Review
 
-- [Components/Pages/Index.razor](Components/Pages/Index.razor)
-- [Components/Pages/BootstrapClasses.razor](Components/Pages/BootstrapClasses.razor)
-- [Components/Pages/BootstrapClasses.razor.css](Components/Pages/BootstrapClasses.razor.css)
-- [Components/App.razor](Components/App.razor)
-- [wwwroot/css/primitives.css](wwwroot/css/primitives.css)
-- [wwwroot/css/theme-fluent.css](wwwroot/css/theme-fluent.css)
+- [Components/Pages/Index.razor](/CS/Components/Pages/Index.razor)
+- [Components/Pages/BootstrapClasses.razor](/CS/Components/Pages/BootstrapClasses.razor)
+- [Components/Pages/BootstrapClasses.razor.css](/CS/Components/Pages/BootstrapClasses.razor.css)
+- [Components/App.razor](/CS/Components/App.razor)
+- [wwwroot/css/primitives.css](/CS/wwwroot/css/primitives.css)
+- [wwwroot/css/theme-fluent.css](/CS/wwwroot/css/theme-fluent.css)
 
 ## Documentation
 
